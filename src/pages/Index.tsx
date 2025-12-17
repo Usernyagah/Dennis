@@ -19,7 +19,7 @@ const Index = () => {
             Dennis Nyagah
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground font-medium">
-            Software Engineer
+            Software Engineer & Business Intelligence Analyst
           </p>
         </div>
 
