@@ -18,13 +18,13 @@ const Index = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-3">
             Dennis Nyagah
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground font-medium">
+          <p className="text-lg md:text-xl text-muted-foreground font-medium" style={{ fontFamily: "'Caveat', cursive" }}>
             Software Engineer & Business Intelligence Analyst
           </p>
         </div>
 
         {/* Value Proposition */}
-        <p className="mt-8 text-lg md:text-xl text-foreground/80 leading-relaxed animate-fade-in-delay">
+        <p className="mt-8 text-lg md:text-xl text-foreground/80 leading-relaxed animate-fade-in-delay" style={{ fontFamily: "'Caveat', cursive" }}>
           Building simple, scalable digital solutions for small and medium businesses.
         </p>
 
@@ -33,6 +33,7 @@ const Index = () => {
           <a
             href="mailto:nyagahtradings@yahoo.com"
             className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
+            style={{ fontFamily: "'Caveat', cursive" }}
           >
             <Mail className="h-5 w-5" />
             <span className="text-sm">nyagahtradings@yahoo.com</span>
@@ -42,6 +43,7 @@ const Index = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
+            style={{ fontFamily: "'Caveat', cursive" }}
           >
             <MessageCircle className="h-5 w-5" />
             <span className="text-sm">0742628137</span>
@@ -52,6 +54,7 @@ const Index = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
             aria-label="GitHub Profile"
+            style={{ fontFamily: "'Caveat', cursive" }}
           >
             <Github className="h-5 w-5" />
             <span className="text-sm">GitHub</span>
@@ -68,7 +71,7 @@ const Index = () => {
 
       {/* Subtle Footer */}
       <footer className="absolute bottom-6 text-center">
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-muted-foreground" style={{ fontFamily: "'Caveat', cursive" }}>
           © {new Date().getFullYear()} Dennis Nyagah
         </p>
       </footer>
