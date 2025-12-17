@@ -28,23 +28,23 @@ const Index = () => {
           Building simple, scalable digital solutions for small and medium businesses.
         </p>
 
-        {/* Contact Icons */}
-        <div className="mt-10 flex items-center justify-center gap-4 animate-fade-in-delay">
+        {/* Contact Info */}
+        <div className="mt-10 flex flex-col items-center gap-4 animate-fade-in-delay">
           <a
             href="mailto:nyagahtradings@yahoo.com"
-            className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
-            aria-label="Send email"
+            className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
           >
             <Mail className="h-5 w-5" />
+            <span className="text-sm">nyagahtradings@yahoo.com</span>
           </a>
           <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
-            aria-label="Chat on WhatsApp"
+            className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
           >
             <MessageCircle className="h-5 w-5" />
+            <span className="text-sm">0742628137</span>
           </a>
         </div>
 
