@@ -1,12 +1,67 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Mail, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Index = () => {
+  const whatsappNumber = "254742628137";
+  const whatsappMessage = encodeURIComponent("Hello Dennis, I'd like to discuss a project with you.");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background px-6 relative">
+      <ThemeToggle />
+      
+      <main className="text-center max-w-2xl mx-auto">
+        {/* Name & Title */}
+        <div className="animate-fade-in">
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-3">
+            Dennis Nyagah
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground font-medium">
+            Software Engineer
+          </p>
+        </div>
+
+        {/* Value Proposition */}
+        <p className="mt-8 text-lg md:text-xl text-foreground/80 leading-relaxed animate-fade-in-delay">
+          Building simple, scalable digital solutions for small and medium businesses.
+        </p>
+
+        {/* Contact Icons */}
+        <div className="mt-10 flex items-center justify-center gap-4 animate-fade-in-delay">
+          <a
+            href="mailto:nyagahtradings@yahoo.com"
+            className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
+            aria-label="Send email"
+          >
+            <Mail className="h-5 w-5" />
+          </a>
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
+            aria-label="Chat on WhatsApp"
+          >
+            <MessageCircle className="h-5 w-5" />
+          </a>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-12 animate-fade-in-delay-2">
+          <Button asChild size="lg" className="px-8 py-6 text-base font-medium">
+            <Link to="/services">View Services</Link>
+          </Button>
+        </div>
+      </main>
+
+      {/* Subtle Footer */}
+      <footer className="absolute bottom-6 text-center">
+        <p className="text-xs text-muted-foreground">
+          © {new Date().getFullYear()} Dennis Nyagah
+        </p>
+      </footer>
     </div>
   );
 };
