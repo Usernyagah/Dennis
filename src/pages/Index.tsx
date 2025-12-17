@@ -24,7 +24,7 @@ const Index = () => {
         </div>
 
         {/* Value Proposition */}
-        <p className="mt-8 text-lg md:text-xl text-foreground/80 leading-relaxed animate-fade-in-delay" style={{ fontFamily: "'Caveat', cursive" }}>
+        <p className="mt-8 text-lg md:text-xl text-foreground/80 leading-relaxed animate-fade-in-delay font-bold" style={{ fontFamily: "'Caveat', cursive" }}>
           Building simple, scalable digital solutions for small and medium businesses.
         </p>
 
