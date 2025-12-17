@@ -43,9 +43,9 @@ const services = [
 ];
 
 const clients = [
-  { name: "Nikas Realty", phone: "0712345678" },
-  { name: "Kote Kwema", phone: "0723456789" },
-  { name: "Safenest", phone: "0734567890" },
+  { name: "Nikas Realty", phone: "0710132320", industry: "Real Estate" },
+  { name: "Kote Kwema", phone: "0710746917", industry: "Architecture" },
+  { name: "Safenest", phone: "0702970187", industry: "DeFi" },
 ];
 
 const Services = () => {
@@ -105,8 +105,11 @@ const Services = () => {
                 key={index}
                 className="flex flex-col items-center justify-center p-6 rounded-lg border border-border bg-card/50 transition-colors duration-300 hover:bg-muted"
               >
-                <span className="text-base font-semibold text-foreground mb-2">
+                <span className="text-base font-semibold text-foreground mb-1">
                   {client.name}
+                </span>
+                <span className="text-xs text-primary font-medium mb-3">
+                  {client.industry}
                 </span>
                 <a 
                   href={`tel:${client.phone}`}
