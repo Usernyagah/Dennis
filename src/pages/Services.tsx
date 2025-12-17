@@ -4,42 +4,40 @@ import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
 import ThemeToggle from "@/components/ThemeToggle";
 
+const asset = (relativePathFromPublicRoot: string) =>
+  `${import.meta.env.BASE_URL}${relativePathFromPublicRoot.replace(/^\//, "")}`;
+
 const services = [
   {
-    title: "Business Websites & Landing Pages",
-    description: "Professional, fast-loading websites that establish credibility and convert visitors into customers.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+    title: "ERP System Integration",
+    description: "Comprehensive ERP solutions that unify your business operations. We specialize in integrating payment processing, inventory management, accounting, and customer relationship management into one seamless system.",
+    image: asset("services/erp.svg"),
   },
   {
-    title: "Internal Business Systems & Dashboards",
-    description: "Custom dashboards and tools to streamline operations and give you real-time business insights.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    title: "Business Process Automation",
+    description: "Streamline your workflows with intelligent automation. Our ERP solutions automate repetitive tasks across departments, from order processing to financial reporting, saving you time and reducing errors.",
+    image: asset("services/automation.svg"),
   },
   {
-    title: "E-commerce Solutions",
-    description: "Online stores that make it easy for your customers to browse, buy, and come back for more.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    title: "Financial Management Suite",
+    description: "End-to-end financial management including accounts payable/receivable, M-Pesa and bank payment processing, payroll, and financial reporting - all integrated within your ERP system.",
+    image: asset("services/finance.svg"),
   },
   {
-    title: "Process Automation & Integrations",
-    description: "Automate repetitive tasks and connect your tools to save time and reduce errors.",
-    image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800&q=80",
+    title: "Inventory & Supply Chain",
+    description: "Real-time inventory tracking, supplier management, and order fulfillment solutions. Our ERP systems provide complete visibility into your supply chain, from procurement to delivery.",
+    image: asset("services/inventory.svg"),
   },
   {
-    title: "Custom Software for Business Operations",
-    description: "Tailored software solutions designed specifically for your unique business processes.",
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
+    title: "Custom ERP Development",
+    description: "Tailored ERP solutions designed for your specific business needs. We build custom modules that integrate with your existing systems, including payment gateways, e-commerce platforms, and third-party services.",
+    image: asset("services/custom-dev.svg"),
   },
   {
-    title: "API Development & Third-Party Integrations",
-    description: "Connect your systems with external services and build powerful data workflows.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
-  },
-  {
-    title: "Ongoing Maintenance & Scaling Support",
-    description: "Keep your systems running smoothly and scale confidently as your business grows.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-  },
+    title: "Business Intelligence & Analytics",
+    description: "Turn your business data into actionable insights. Our ERP solutions include powerful analytics dashboards that help you track KPIs, monitor sales trends, and make data-driven decisions.",
+    image: asset("services/analytics.svg"),
+  }
 ];
 
 const clients = [

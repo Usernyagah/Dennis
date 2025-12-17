@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071A1A"/>
+      <stop offset="1" stop-color="#0B2E4A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="240" y1="140" x2="960" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#FBBF24"/>
+    </linearGradient>
+    <filter id="shadow" x="-40" y="-40" width="1280" height="680" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" rx="28" fill="url(#bg)"/>
+  <path d="M0 480C180 420 300 520 460 470C620 420 690 250 840 220C990 190 1080 260 1200 220V600H0V480Z" fill="#0891B2" opacity=".16"/>
+
+  <g filter="url(#shadow)">
+    <rect x="160" y="130" width="880" height="340" rx="26" fill="#071F2A" stroke="#164E63"/>
+
+    <rect x="210" y="190" width="520" height="230" rx="22" fill="#05202A" stroke="#155E75"/>
+    <path d="M260 250H680" stroke="#134E4A" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+    <path d="M260 295H620" stroke="#134E4A" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+
+    <path d="M270 380V320" stroke="url(#accent)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M330 380V290" stroke="url(#accent)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M390 380V340" stroke="url(#accent)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M450 380V270" stroke="url(#accent)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M510 380V310" stroke="url(#accent)" stroke-width="14" stroke-linecap="round"/>
+
+    <rect x="760" y="190" width="230" height="230" rx="26" fill="#05202A" stroke="#155E75"/>
+    <circle cx="875" cy="290" r="70" fill="#062B34" stroke="url(#accent)" stroke-width="10"/>
+    <path d="M860 255h30c18 0 32 9 32 26 0 15-11 24-27 26l-35 5c-12 2-18 7-18 16 0 10 9 16 23 16h49" stroke="#FBBF24" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M875 238v104" stroke="#FBBF24" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <text x="160" y="86" fill="#E5E7EB" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="26" font-weight="700" opacity=".95">Financial Suite</text>
+</svg>
+

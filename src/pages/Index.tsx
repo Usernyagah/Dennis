@@ -1,4 +1,4 @@
-import { Mail, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -45,6 +45,16 @@ const Index = () => {
           >
             <MessageCircle className="h-5 w-5" />
             <span className="text-sm">0742628137</span>
+          </a>
+          <a
+            href="https://github.com/Usernyagah"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-border bg-card text-foreground transition-all duration-300 hover:bg-muted hover:border-foreground/20"
+            aria-label="GitHub Profile"
+          >
+            <Github className="h-5 w-5" />
+            <span className="text-sm">GitHub</span>
           </a>
         </div>
 
