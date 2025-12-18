@@ -63,7 +63,11 @@ const Index = () => {
 
         {/* CTA Button */}
         <div className="mt-12 animate-fade-in-delay-2">
-          <Button asChild size="lg" className="px-8 py-6 text-base font-medium">
+          <Button
+            asChild
+            size="lg"
+            className="px-8 py-6 text-base font-medium btn-guide"
+          >
             <Link to="/services">View Services</Link>
           </Button>
         </div>
