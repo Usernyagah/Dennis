@@ -23,19 +23,22 @@ This project is built with:
 
 - Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-### Installation
+### Cloning the repository
 
 ```sh
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
+# 1. Clone via HTTPS
+git clone https://github.com/Usernyagah/Dennis.git
 
-# Step 2: Navigate to the project directory
-cd portfolio
+# or clone via SSH (if you have SSH keys configured)
+# git clone git@github.com:Usernyagah/Dennis.git
 
-# Step 3: Install dependencies
+# 2. Move into the project folder
+cd Dennis
+
+# 3. Install dependencies
 npm install
 
-# Step 4: Start the development server
+# 4. Start the development server
 npm run dev
 ```
 
