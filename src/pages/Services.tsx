@@ -47,6 +47,10 @@ const clients = [
 ];
 
 const Services = () => {
+  const whatsappNumber = "254742628137";
+  const whatsappMessage = encodeURIComponent("Hello, I'd like to discuss a project with you.");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
   return (
     <div className="min-h-screen bg-background">
       <ThemeToggle />
@@ -132,7 +136,7 @@ const Services = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="px-8">
-                <a href="mailto:nyagahtradings@yahoo.com">Get in Touch</a>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">Get in Touch</a>
               </Button>
               <Button variant="outline" asChild size="lg" className="px-8">
                 <Link to="/">Back to Home</Link>
