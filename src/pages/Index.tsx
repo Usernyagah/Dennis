@@ -2,17 +2,19 @@ import { Mail, MessageCircle, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
+import AnimatedServicesBackground from "@/components/AnimatedServicesBackground";
 
 const Index = () => {
   const whatsappNumber = "254742628137";
-  const whatsappMessage = encodeURIComponent("Hello Dennis, I'd like to discuss a project with you.");
+  const whatsappMessage = encodeURIComponent("Hello, I'd like to discuss a project with you.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-background px-6 relative">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background px-6 relative overflow-hidden">
+      <AnimatedServicesBackground />
       <ThemeToggle />
       
-      <main className="text-center max-w-2xl mx-auto">
+      <main className="text-center max-w-2xl mx-auto relative z-10">
         {/* Name & Title */}
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight mb-3">
@@ -74,9 +76,9 @@ const Index = () => {
       </main>
 
       {/* Subtle Footer */}
-      <footer className="absolute bottom-6 text-center">
-        <p className="text-xs text-muted-foreground" style={{ fontFamily: "'Caveat', cursive" }}>
-          © {new Date().getFullYear()} Dennis Nyagah
+      <footer className="absolute bottom-6 text-center relative z-10">
+        <p className="text-xs text-muted-foreground inline-flex items-center gap-1" style={{ fontFamily: "'Caveat', cursive" }}>
+          <span>©</span> <span>{new Date().getFullYear()} Dennis Nyagah</span>
         </p>
       </footer>
     </div>

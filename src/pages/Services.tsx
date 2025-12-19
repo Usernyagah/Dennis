@@ -74,7 +74,7 @@ const Services = () => {
 
         {/* Services Grid */}
         <section className="mb-24 animate-fade-in-delay">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -144,8 +144,8 @@ const Services = () => {
 
       {/* Footer */}
       <footer className="py-8 text-center border-t border-border">
-        <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Dennis Nyagah. All rights reserved.
+        <p className="text-sm text-muted-foreground inline-flex items-center gap-1">
+          <span>©</span> <span>{new Date().getFullYear()} Dennis Nyagah. All rights reserved.</span>
         </p>
       </footer>
     </div>
