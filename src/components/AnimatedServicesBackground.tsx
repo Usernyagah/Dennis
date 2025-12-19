@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useMemo } from "react";
 
 interface FloatingService {
   text: string;
@@ -12,10 +12,7 @@ interface FloatingService {
   animationType: "float" | "drift" | "orbit" | "wave";
 }
 
-const AnimatedServicesBackground = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const services: Omit<FloatingService, "x" | "y">[] = [
+const services: Omit<FloatingService, "x" | "y">[] = [
     { text: "Website", duration: 8, delay: 0, size: 1, opacity: 0.08, animationType: "float" },
     { text: "Software", duration: 10, delay: 1.2, size: 1.2, opacity: 0.1, animationType: "drift" },
     { text: "ERP", duration: 7, delay: 2.4, size: 0.9, opacity: 0.09, animationType: "orbit" },
@@ -38,7 +35,10 @@ const AnimatedServicesBackground = () => {
     { text: "Consulting", duration: 8, delay: 22.8, size: 0.95, opacity: 0.08, animationType: "wave" },
     { text: "Custom Development", duration: 9, delay: 24.0, size: 1.2, opacity: 0.1, animationType: "float" },
     { text: "System Integration", duration: 10, delay: 25.2, size: 0.9, opacity: 0.07, animationType: "drift" },
-  ];
+];
+
+const AnimatedServicesBackground = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -115,6 +115,7 @@ const AnimatedServicesBackground = () => {
         }
       });
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
