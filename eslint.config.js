@@ -27,6 +27,8 @@ export default tseslint.config(
     files: ["tailwind.config.ts"],
     rules: {
       "@typescript-eslint/no-require-imports": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "no-var-requires": "off",
     },
   },
 );
